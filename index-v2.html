@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasif Ahmad - Modern Portfolio</title>
+    
+    <!-- Modern CSS Framework -->
+    <link rel="stylesheet" href="assets/modern-portfolio.css">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <h2 class="loading-text">Welcome to my Portfolio</h2>
+            <div class="loading-progress">
+                <div class="loading-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cursor Effects -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Particle Background -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="modern-nav" id="modernNav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h3>Wasif <span class="accent">Ahmad</span></h3>
+            </div>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+                <li><a href="#portfolio" class="nav-link" data-section="portfolio">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="uil uil-moon"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="title-line">Hi, I'm</span>
+                            <span class="title-name">Wasif Ahmad</span>
+                            <span class="title-role">Software Engineer</span>
+                        </h1>
+                        <p class="hero-description">
+                            A graduate engineer from <strong>Szabist</strong>, Islamabad. 
+                            Passionate about creating innovative software solutions and bringing ideas to life through code.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#portfolio" class="btn btn-primary">
+                                <span>View My Work</span>
+                                <i class="uil uil-arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <span>Get In Touch</span>
+                                <i class="uil uil-message"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <div class="image-background"></div>
+                            <img src="assets/img/profile.png" alt="Wasif Ahmad" class="profile-image">
+                            <div class="image-effects">
+                                <div class="floating-element element-1"></div>
+                                <div class="floating-element element-2"></div>
+                                <div class="floating-element element-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-social">
+                    <a href="https://www.linkedin.com/in/wasif-ahmad-5594a81ba" target="_blank" class="social-link">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="https://github.com/Wasif581-create" target="_blank" class="social-link">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
+                
+                <div class="scroll-indicator">
+                    <div class="scroll-line"></div>
+                    <span class="scroll-text">Scroll</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">My introduction</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="about-img-container">
+                            <img src="assets/img/profile.png" alt="About Wasif" class="about-img">
+                            <div class="about-decoration"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-info">
+                        <p class="about-text">
+                            I am a recent graduate in Software Engineering with a strong foundation in programming, 
+                            software development methodologies, and problem-solving. Throughout my academic career, 
+                            I have gained hands-on experience in building applications, working with databases, 
+                            and collaborating on team projects using Agile practices.
+                        </p>
+                        
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <h3 class="stat-number">3.04+</h3>
+                                <p class="stat-label">Aggregate CGPA</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3 class="stat-number">04+</h3>
+                                <p class="stat-label">Projects</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3 class="stat-number">1+</h3>
+                                <p class="stat-label">Year Experience</p>
+                            </div>
+                        </div>
+                        
+                        <a href="assets/cv.pdf" download class="btn btn-primary">
+                            <span>Download CV</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills</h2>
+                    <p class="section-subtitle">My technical expertise</p>
+                </div>
+                
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-code category-icon"></i>
+                            <h3 class="category-title">Programming Languages</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <span class="skill-name">Java</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-cuttlefish"></i>
+                                </div>
+                                <span class="skill-name">C#</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <span class="skill-name">C++</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="category-header">
+                            <i class="fas fa-cogs category-icon"></i>
+                            <h3 class="category-title">IT Constructs</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <span class="skill-name">DBMS</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <span class="skill-name">Steganography</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-object-group"></i>
+                                </div>
+                                <span class="skill-name">OOP</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <span class="skill-name">OS</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <span class="skill-name">ASO Expert</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience/Qualification Section -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Journey</h2>
+                    <p class="section-subtitle">Education & Experience</p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2021 - 2025</div>
+                            <h3 class="timeline-title">Bachelor of Software Engineering</h3>
+                            <p class="timeline-subtitle">Szabist, Islamabad</p>
+                            <p class="timeline-description">
+                                Studied core subjects of IT including DSA, Embedded systems, Design analysis and algorithm, 
+                                Operating systems, and Computer architecture. Achieved an aggregate CGPA of 3.04.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2017</div>
+                            <h3 class="timeline-title">Higher Secondary School Certificate (HSSC)</h3>
+                            <p class="timeline-subtitle">Dawn School & College System, Swat</p>
+                            <p class="timeline-description">
+                                Subjects studied: Physics, Chemistry, English, Biology, Urdu. Scored 75%.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2015</div>
+                            <h3 class="timeline-title">Secondary School Certificate (SSC)</h3>
+                            <p class="timeline-subtitle">Iqra Academy, Swat</p>
+                            <p class="timeline-description">
+                                Subjects studied: Science, Maths, English, Urdu. Scored 78%. 
+                                Came runners up in inter-school Football.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Projects</h2>
+                    <p class="section-subtitle">Recent work showcase</p>
+                </div>
+                
+                <div class="portfolio-container">
+                    <div class="swiper portfolio-swiper">
+                        <div class="swiper-wrapper">
+                            
+                            <div class="swiper-slide">
+                                <div class="project-card">
+                                    <div class="project-image">
+                                        <img src="assets/img/encrypt.png" alt="Zabsecret Blend">
+
+                                    </div>
+                                    <div class="project-content">
+                                        <h3 class="project-title">Zabsecret Blend</h3>
+                                        <p class="project-description">
+                                            University based project which hide data inside a picture through steganography 
+                                            called encryption and then decrypt it through RGB algorithm.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="project-card">
+                                    <div class="project-image">
+                                        <img src="assets/img/decrypt.png" alt="ZSB Decryption">
+                                    </div>
+                                    <div class="project-content">
+                                        <h3 class="project-title">ZSB Decryption</h3>
+                                        <p class="project-description">
+                                            This project decrypt the data from a picture by using AI and steganographic technique.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="project-card">
+                                    <div class="project-image">
+                                        <img src="assets/img/portfolio2.png" alt="Spotify Clone">
+                                    </div>
+                                    <div class="project-content">
+                                        <h3 class="project-title">Spotify Clone</h3>
+                                        <p class="project-description">
+                                            Web app developed using HTML, CSS, and JavaScript. Recreates Spotify's interface 
+                                            and features with responsive design.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="project-card">
+                                    <div class="project-image">
+                                        <img src="assets/img/imagick.png" alt="Imagick Tool">
+                                    </div>
+                                    <div class="project-content">
+                                        <h3 class="project-title">Imagick Tool</h3>
+                                        <p class="project-description">
+                                            Extension used to generate QR code bar which can be scanned through any scanner.
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                        
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's work together</p>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="uil uil-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>03018153293</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="uil uil-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>ahmadwasif039@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="uil uil-location-point"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Islamabad, G9/4, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="form" method="POST">
+                        <input type="hidden" name="access_key" value="9ed9be5e-091b-471b-b346-be701a5b938c">
+                        <div class="form-group">
+                            <input type="text" id="userName" name="name" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="userEmail" name="email" class="form-input" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="userMessage" name="message" class="form-input" rows="6" placeholder="Your Message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="uil uil-message"></i>
+                        </button>
+                        <div id="result"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Wasif Ahmad</h3>
+                    <p>Software Engineer</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#portfolio">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/wasif-ahmad-5594a81ba" target="_blank">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                    <a href="https://github.com/Wasif581-create" target="_blank">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Wasif Ahmad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+    const form = document.getElementById('form');
+    const result = document.getElementById('result');
+
+    form.addEventListener('submit', function(e) {
+        const formData = new FormData(form);
+        e.preventDefault();
+
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        result.style.display = 'block';
+        result.innerHTML = 'Please wait...';
+
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = json.message;
+                } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.innerHTML = 'Something went wrong!';
+            })
+            .then(function() {
+                form.reset();
+                setTimeout(() => {
+                    result.style.display = 'none';
+                }, 3000);
+            });
+    });
+    </script>
+    <script src="assets/swiper-bundle.min.js"></script>
+    <script src="assets/modern-portfolio.js"></script>
+</body>
+</html>
