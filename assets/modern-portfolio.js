@@ -328,21 +328,10 @@ class ModernPortfolio {
         setTimeout(type, 1500);
     }
 
-    // Skill Hover Effects
+    // Skill Hover Effects - Now handled entirely by CSS for consistency
     setupSkillHovers() {
-        const skillItems = document.querySelectorAll('.skill-item');
-        
-        skillItems.forEach(item => {
-            item.addEventListener('mouseenter', () => {
-                item.style.transform = 'translateY(-10px) scale(1.05)';
-                item.style.boxShadow = '0 20px 40px rgba(var(--primary-hue), 69%, 61%, 0.3)';
-            });
-            
-            item.addEventListener('mouseleave', () => {
-                item.style.transform = 'translateY(0) scale(1)';
-                item.style.boxShadow = 'none';
-            });
-        });
+        // CSS handles all hover effects for both themes
+        // This function kept for potential future enhancements
     }
 
     // Contact Form
